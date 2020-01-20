@@ -21,7 +21,7 @@ obs: É necessário simular os dados da api conforme solicitado anteriormente e 
 No projeto existe um componente nomeado Card. Nele é onde estão todos os dados buscados da API. Estão os dados de configurações e também de informações no produto conforme foi disponibilizado para mim.
 
 
-# Imagens do projeto
+# Images
 
 ![alt_CardModel](https://github.com/paulocostajunior/shoppub-ch/blob/master/src/assets/CardModel.png)
 
