@@ -1,24 +1,31 @@
 # shoppub-challenge
 
-## Project setup
+![alt_ListObj](https://github.com/paulocostajunior/shoppub-ch/blob/master/src/assets/ListObj.png)
+
+# About
 ```
-npm install
+Se trata de um card onde é montado dinamicamente de acordo com todos os dados representados no JSON.
+Para realizar o projeto utilizei o JSON Server para simular um servidor e conseguir buscar as informações no front-end que foi desenvolvido em Vue.js.
+Segui o design de acordo com o projeto disponibilizado, aplicando desde o tamanho das fontes até as cores dos botões.
 ```
 
-### Compiles and hot-reloads for development
+# Project setup
 ```
-npm run serve
-```
-
-### Compiles and minifies for production
-```
-npm run build
+Para compilar o projeto é necessário ter instalado o NPM (Node Package Manager).
+Após clonar o projeto entre na pasta selecionada. Utilize o comando npm install para assim instalar os pacotes necessários.
+Depois de instalado, execute o npm run server e então a aplicação estará pronta para ser visualizada.
+obs: É necessário simular os dados da api conforme solicitado anteriormente e alterar os nome dos servidores no arquivo src/App.vue. No caso o meu está como "http://localhost:3001".
 ```
 
-### Lints and fixes files
+# Card Component
 ```
-npm run lint
+No projeto existe um componente nomeado Card. Nele é onde estão todos os dados buscados da API. Estão os dados de configurações e também de informações no produto conforme foi disponibilizado para mim.
 ```
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+# Imagens do projeto
+
+![alt_CardModel](https://github.com/paulocostajunior/shoppub-ch/blob/master/src/assets/CardModel.png)
+
+![alt_CardModelClicked](https://github.com/paulocostajunior/shoppub-ch/blob/master/src/assets/CardModelClicked.png)
+
+![alt_CardModelHover](https://github.com/paulocostajunior/shoppub-ch/blob/master/src/assets/CardModelHover.png)
