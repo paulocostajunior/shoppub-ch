@@ -1,28 +1,75 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <div v-if="this.settings.title">
+      <h2 class="mb-4">{{this.settings.title}}</h2>
+    </div>
+    <div v-if="products.length">
+      <div class="flex-container">
+        <Card 
+          v-for="(prod, index) in products"
+          :key="index"
+          :product="prod"
+          :settings="settings"
+        />
+      </div>
+    </div>      
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import Card from "./components/Card.vue";
 
 export default {
-  name: 'app',
+  name: "app",
   components: {
-    HelloWorld
+    Card
+  },
+  data() {
+    return {
+      settings: {},
+      prod: {},
+      products: [],
+      index: 0
+    };
+  },
+
+  mounted: function() {
+    fetch("http://localhost:3001/settings", {
+      method: "get"
+    })
+      .then(response => {
+        return response.json();
+      })
+      .then(jsonData => {
+        this.settings = jsonData;
+      });
+
+    fetch("http://localhost:3001/products", {
+      method: "get"
+    })
+      .then(response => {
+        return response.json();
+      })
+      .then(jsonData => {
+        this.products = jsonData;
+      });
   }
-}
+};
 </script>
 
 <style>
 #app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  font-family: "Avenir", Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
+
+}
+.flex-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 </style>
