@@ -1,7 +1,7 @@
 export default {
   props: {
     product: Object,
-    settings: Object
+    settings: Object,
   },
   data() {
     return {
@@ -15,10 +15,19 @@ export default {
         index: 1
       },
       prodImg : this.product.images[0].cover,
-      i: 1
+      i: 1,
+      selectedOption: 1
     }
   },
   mounted: function() {
+    this.options = this.product.attributes.map(item => {
+      return {
+        value: item.id,
+        text: item.label
+      }
+    })
+    this.options.push({value: null, text: 'selecione uma opção.'})
+
     this.product.attributes.map((item, index) => {
       return this.product.attributes[index] = {
         id: item.id,
@@ -35,7 +44,6 @@ export default {
         displayGroup: this.displayGroupIndex(index, this.i)
       }
     });
-    console.log(this.product.related_products)
   },
   methods: {
     formatPrice(value) {

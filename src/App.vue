@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <div v-if="this.settings.title">
-      <h2 class="mb-4">{{this.settings.title}}</h2>
+      <h2 class="ml-1 mb-4">{{this.settings.title}}</h2>
     </div>
     <div v-if="products.length">
       <div class="flex-container">
@@ -17,7 +17,7 @@
 </template>
 
 <script>
-import Card from "./components/Card.vue";
+import Card from "./components/Card/Card.vue";
 
 export default {
   name: "app",

@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+/* display flex */
+.display-flex-center {
+  display: flex; 
+  justify-content: center;
+}
+
+/* title */
+.font-title {
+  font-size: 14px;
+  font-family: 'Roboto', sans-serif;
+}
+
+/* buttons */
+.button-size {
+  height: 26px;
+  width: 98px;
+  border: none;
+  font-size: 11px;
+  font-family: 'Roboto', sans-serif;
+}
+.button-frete {
+  background-color:#E05618;
+}
+.buttonfrete:hover {
+  background-color:#E05618;
+}
+.button-frete:focus {
+  background-color:#E05618;
+}
+.button-a-vista {
+  background-color:#679B0C;
+}
+.button-a-vista:hover {
+  background-color:#679B0C;
+}
+
+/* pricing */
+.main-text {
+  font-size: 14px;
+  font-family: 'Roboto', sans-serif;
+}
+.installment-price {
+  font-size: 12px;
+  font-family: 'Roboto', sans-serif;
+}
+.main-price {
+  font-size: 18px;
+  font-family: 'Roboto', sans-serif;
+}  
+.price-color {
+  color: #F45400;
+}
+.discount-color {
+  color:#888888;
+}
+
+/* img tags */
+.tag-star {
+  font-size: 35px;
+  float: left;
+  position: relative;
+  left: -10px;
+  top: -5px;
+  z-index: 1000;
+  font-weight: bold;
+}
+.tag-novo {
+  font-size: 10px;
+  float: left;
+  position: absolute;
+  left: 265px;
+  top: 5px;
+  z-index: 1000;
+  background-color: #F45400;
+  padding-top: 15px;
+  height: 50px;
+  width: 50px;
+  color: #FFFFFF;
+  font-weight: bold;
+  cursor: default;
+}
+.tag-off {
+  font-size: 10px;
+  float: left;
+  position: absolute;
+  left: 265px;
+  top: 60px;
+  z-index: 1000;
+  background-color: #FF8900;
+  padding: 13px;
+  height: 50px;
+  width: 50px;
+  color: #FFFFFF;
+  font-weight: bold;
+  cursor: default;
+}
+.container {
+  border: 1px solid #DDDDDD;
+  position: relative;
+}
+
+/* hover content */
+#hover-content {
+  display:none;
+}
+#card-content:hover #hover-content {
+  display:block;
+}
+
+/* attributes inside hover content */
+.attribute-button {
+  height: 32px;
+  width: 33px;
+}
+.attribute-font {
+  font-size: 12px;
+  font-family: 'Roboto', sans-serif;
+}
+.attribute-not-selected {
+  background-color: white;
+  border:1px solid #888888;
+  color: #444444;
+  height: 32px;
+  width: 33px;
+}
+.attribute-not-selected:hover {
+  background-color: #7AB11B;
+  color:white;
+  height: 32px;
+  width: 33px;
+}
+.attribute-selected {
+  background-color: #7AB11B;
+  color:white;
+  height: 32px;
+  width: 33px;
+}
+
+/* buttons inside hover content */
+.button-comprar-ver {
+  font-size: 16px;
+  font-family: 'Roboto', sans-serif;
+}
+#button-comprar {
+  height: 36px;
+  width: 183px;
+  border: none;
+  background-color: #7AB11B;
+}
+#button-ver {
+  height: 36px;
+  width: 102px;
+  border: none;
+  background-color: #906378;
+}
+
+/* input inside hover content */
+#input-quantity {
+  height: 53px; 
+  width: 53px;
+  border: 1px solid #888888;
+  background-color: white;
+  color: #444444;
+  padding: 15px;
+  cursor: default;
+}
+#add-button {
+  height: 53px;
+  width: 184px;
+  font-size: 16px;
+  background-color:#679B0C;
+  color:white;
+  padding:15px;
+}
+.arrow-box {
+  height: 23px;
+  width: 32px;
+  background-color: #707070;
+  color: white;
+  font-size: 14px;
+  border-radius: 0px;
+  padding-top: 1px;
+}
+
+/* related */
+.img-related {
+  background-color: none;
+  height: 50px;
+  width: 50px;
+}
+.img-related:hover {
+  cursor: pointer;
+}
+.arrow-related-right {
+  font-size: 35px;
+  text-align:right;
+}
+.arrow-related-left {
+  font-size: 35px;
+  text-align:left;
+}
