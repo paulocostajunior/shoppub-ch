@@ -6,7 +6,7 @@
 
 Se trata de um card onde é montado dinamicamente de acordo com todos os dados representados no JSON.
 Para realizar o projeto utilizei o JSON Server para simular um servidor e conseguir buscar as informações no front-end que foi desenvolvido em Vue.js.
-Segui o design de acordo com o projeto disponibilizado, aplicando desde o tamanho das fontes até as cores dos botões.
+Segui o design de acordo com o projeto disponibilizado, aplicando desde o tamanho das fontes até as cores dos botões e para auxiliar o mesmo foi a biblioteca BootstrapVue.
 
 # Project setup
 
